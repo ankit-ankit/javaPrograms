@@ -405,7 +405,14 @@ public class Main
         
         do
         {
-           obj.gameStart();
+           if(Main.userShips == 0 || Main.computerShips == 0)
+           {
+           	break;
+           }else
+           {
+           	obj.gameStart();
+           }
+           
         }while(Main.userShips!=0 || Main.computerShips!=0);
 
         
